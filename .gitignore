@@ -1,0 +1,22 @@
+# Exclude Gradle related files
+.gradle/
+/build/
+
+# Exclude IntelliJ IDEA files
+*.iml
+/.idea/
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# Exclude system files
+.DS_Store
+local.properties
+
+# Exclude generated files and directories
+/captures
+/externalNativeBuild
+/.cxx

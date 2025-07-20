@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/squareContainer"
+            android:layout_width="230dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="100dp">
+
+            <androidx.camera.view.PreviewView
+                android:id="@+id/viewFinder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/transparent_shape" />
+
+            <View
+                android:id="@+id/greenRingView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_stroke"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/redRingView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/red_stroke"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
